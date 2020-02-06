@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 
 
 import java.io.IOException;
+import java.util.Arrays;
 
 public class Main extends Application {
     private Stage primaryStage;
@@ -29,7 +30,7 @@ public class Main extends Application {
         showMainView();
 
     }
-    private void showMainView() throws IOException{
+    public void showMainView() throws IOException{
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/8GameMainMenu.fxml"));
         vbox = loader.load();
@@ -39,6 +40,12 @@ public class Main extends Application {
     }
 
     public static void showGame(EightPuzzle myGame)throws IOException{
+        myGame = new EightPuzzle();
+        while(GFG.isSolvable(myGame.getState()) == false) {
+            System.out.println("Generating problem with a solution...");
+            myGame.shuffle();
+        }
+        System.out.print(Arrays.deepToString(myGame.getPuzzle()));
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/8Game.fxml"));
         VBox vboxGame = loader.load();

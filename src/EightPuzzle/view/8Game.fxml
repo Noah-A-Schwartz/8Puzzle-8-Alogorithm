@@ -93,7 +93,8 @@
                               <Font name="Microsoft Tai Le" size="48.0" />
                            </font>
                         </Text>
-                        <Button fx:id="startSolve" layoutX="81.0" layoutY="113.0" mnemonicParsing="false" onAction="#Solve" text="Solve" />
+                        <Button fx:id="startSolve" layoutX="130.0" layoutY="113.0" mnemonicParsing="false" onAction="#Solve" text="Solve" />
+                        <Button fx:id="mainButton" layoutX="42.0" layoutY="113.0" mnemonicParsing="false" onAction="#returnToMain" text="Main Menu" />
                      </children></Pane>
                   <Pane fx:id="pane8" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <children>

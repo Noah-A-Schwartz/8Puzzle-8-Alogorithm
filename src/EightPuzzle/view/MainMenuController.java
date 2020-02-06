@@ -29,9 +29,6 @@ public class MainMenuController {
 
     @FXML
     void startGame(ActionEvent event)throws IOException {
-        myController = new GameController();
-        myGame = new EightPuzzle();
-        System.out.print(Arrays.deepToString(myGame.getPuzzle()));
         Main.showGame(myGame);
 
     }

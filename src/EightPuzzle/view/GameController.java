@@ -4,6 +4,7 @@ import EightPuzzle.EightPuzzle;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
@@ -71,6 +72,9 @@ public class GameController {
     @FXML
     private Text text08;
 
+    @FXML
+    private Button mainButton;
+
 
     public GameController() {
 
@@ -85,6 +89,11 @@ public class GameController {
 
     @FXML
     void Solve(ActionEvent event) {
+
+    }
+    @FXML
+    void returnToMain(ActionEvent event) {
+
 
     }
 
