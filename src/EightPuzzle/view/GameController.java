@@ -18,7 +18,11 @@ import javafx.event.ActionEvent;
 import java.io.IOException;
 import java.util.Observable;
 
+
+
 public class GameController {
+
+    private static  EightPuzzle myGame;
 
     private static VBox vbox;
     @FXML
@@ -88,7 +92,9 @@ public class GameController {
 
     @FXML
     void Solve(ActionEvent event) {
-
+        while((myGame.isGoal()) == false) {
+            myGame.solveGame();
+        }
     }
     @FXML
     void returnToMain(ActionEvent event) throws IOException {
@@ -97,6 +103,7 @@ public class GameController {
     }
 
     public void createBoard(EightPuzzle myGame) {
+        this.myGame = myGame;
         for (int row = 0; row < myGame.getPuzzle().length; row++) {
             for (int column = 0; column < myGame.getPuzzle()[row].length; column++) {
                 setRowAndColumn();
@@ -145,5 +152,8 @@ public class GameController {
                 count++;
             }
             }
+        }
+        public void moveNumber(int rowStart, int rowEnd, int ColumnStart, int columnEnd){
+
         }
     }

@@ -43,8 +43,8 @@ public class EightPuzzle {
             }
     }
 
-    public boolean isGoal(EightPuzzle game){
-        if(game.state == goalState)
+    public boolean isGoal(){
+        if(state == goalState)
             return true;
         else return false;
     }

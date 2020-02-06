@@ -8,10 +8,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="EightPuzzle.view.GameController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EightPuzzle.view.GameController">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
@@ -37,6 +38,8 @@
                               <Font name="Microsoft Tai Le" size="48.0" />
                            </font>
                         </Text>
+                        <Line fx:id="line0To1" endX="120.93746948242188" endY="0.0078125" layoutX="200.0" layoutY="62.0" startX="-93.0625228881836" startY="0.0078125" />
+                        <Line fx:id="line0To3" endX="-8.062522888183594" endY="83.0" layoutX="115.0" layoutY="103.0" startX="-8.062522888183594" startY="-40.9921875" />
                      </children></Pane>
                   <Pane fx:id="pane1" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
                      <children>
@@ -45,6 +48,8 @@
                               <Font name="Microsoft Tai Le" size="48.0" />
                            </font>
                         </Text>
+                        <Line fx:id="line1To2" endX="107.27081298828125" endY="0.0078125" layoutX="213.0" layoutY="62.0" startX="-106.06253051757812" startY="0.0078125" />
+                        <Line fx:id="line1To4" endX="-8.062530517578125" endY="83.0" layoutX="116.0" layoutY="104.0" startX="-8.062522888183594" startY="-40.9921875" />
                      </children></Pane>
                   <Pane fx:id="pane2" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
                      <children>
@@ -53,7 +58,9 @@
                               <Font name="Microsoft Tai Le" size="48.0" />
                            </font>
                         </Text>
-                     </children></Pane>
+                        <Line fx:id="line2To5" endX="-8.062522888183594" endY="83.0" layoutX="115.0" layoutY="103.0" startX="-8.062522888183594" startY="-40.9921875" />
+                     </children>
+                  </Pane>
                   <Pane fx:id="pane3" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
                      <children>
                         <Text fx:id="text03" fontSmoothingType="LCD" layoutX="94.0" layoutY="76.0" strokeWidth="0.0" text="3">
@@ -61,6 +68,8 @@
                               <Font name="Microsoft Tai Le" size="48.0" />
                            </font>
                         </Text>
+                        <Line fx:id="line3To4" endX="179.93746948242188" endY="1.0078315734863281" layoutX="141.0" layoutY="61.0" startX="-34.062522888183594" startY="1.0078315734863281" />
+                        <Line fx:id="line3To6" endX="-8.062522888183594" endY="83.0" layoutX="115.0" layoutY="102.0" startX="-8.062522888183594" startY="-40.9921875" />
                      </children></Pane>
                   <Pane fx:id="pane4" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
@@ -69,6 +78,8 @@
                               <Font name="Microsoft Tai Le" size="48.0" />
                            </font>
                         </Text>
+                        <Line fx:id="line4To5" endX="159.27081298828125" endY="0.007831573486328125" layoutX="161.0" layoutY="62.0" startX="-54.062530517578125" startY="0.007831573486328125" />
+                        <Line fx:id="line4To7" endX="-8.062522888183594" endY="83.0" layoutX="116.0" layoutY="103.0" startX="-8.062522888183594" startY="-40.9921875" />
                      </children></Pane>
                   <Pane fx:id="pane5" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <children>
@@ -77,7 +88,9 @@
                               <Font name="Microsoft Tai Le" size="48.0" />
                            </font>
                         </Text>
-                     </children></Pane>
+                        <Line fx:id="line8To8" endX="-8.062522888183594" endY="83.0" layoutX="115.0" layoutY="104.0" startX="-8.062522888183594" startY="-40.9921875" />
+                     </children>
+                  </Pane>
                   <Pane fx:id="pane6" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
                      <children>
                         <Text fx:id="text06" fontSmoothingType="LCD" layoutX="94.0" layoutY="76.0" strokeWidth="0.0" text="6">
@@ -85,6 +98,7 @@
                               <Font name="Microsoft Tai Le" size="48.0" />
                            </font>
                         </Text>
+                        <Line fx:id="line6To7" endX="251.66665649414062" endY="1.0078125" layoutX="71.0" layoutY="60.0" startX="35.666664123535156" startY="1.0078125" />
                      </children></Pane>
                   <Pane fx:id="pane7" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
@@ -95,6 +109,7 @@
                         </Text>
                         <Button fx:id="startSolve" layoutX="130.0" layoutY="113.0" mnemonicParsing="false" onAction="#Solve" text="Solve" />
                         <Button fx:id="mainButton" layoutX="42.0" layoutY="113.0" mnemonicParsing="false" onAction="#returnToMain" text="Main Menu" />
+                        <Line fx:id="line7To8" endX="201.27081298828125" endY="1.0078125" layoutX="119.0" layoutY="61.0" startX="-9.666656494140625" startY="0.0078125" />
                      </children></Pane>
                   <Pane fx:id="pane8" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <children>
@@ -104,6 +119,10 @@
                            </font>
                         </Text>
                      </children></Pane>
+                  <Line fx:id="line0To32" endX="-8.062522888183594" endY="83.0" startX="-8.062522888183594" startY="-40.9921875" />
+                  <Line fx:id="line0To33" endX="-8.062522888183594" endY="83.0" startX="-8.062522888183594" startY="-40.9921875" />
+                  <Line fx:id="line0To34" endX="-8.062522888183594" endY="83.0" startX="-8.062522888183594" startY="-40.9921875" />
+                  <Line fx:id="line0To35" endX="-8.062522888183594" endY="83.0" startX="-8.062522888183594" startY="-40.9921875" />
                </children>
             </GridPane>
       </children>
