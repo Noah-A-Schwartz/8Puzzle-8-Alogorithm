@@ -55,10 +55,7 @@ public class Main extends Application {
         myController = loader.getController();
         myController.createBoard(myGame);
         vbox.getChildren().setAll(vboxGame);
-
-
     }
-
 
     public static void main(String[] args) {
         launch(args);

@@ -27,13 +27,11 @@ public class MainMenuController {
 
     public MainMenuController(){ }
 
-
     @FXML
     void startGame(ActionEvent event)throws IOException {
         Main.showGame(myGame);
 
     }
-
 
     @FXML
     public Button getButtonStart() {

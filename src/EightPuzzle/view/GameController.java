@@ -86,11 +86,6 @@ public class GameController {
 
     }
 
-
-
-
-
-
     @FXML
     void Solve(ActionEvent event) {
 

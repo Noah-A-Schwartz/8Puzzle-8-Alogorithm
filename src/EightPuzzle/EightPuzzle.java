@@ -21,10 +21,7 @@ public class EightPuzzle {
         state =  new Integer[3][3];
         shuffle();
 
-
-
        }
-
 
     public Integer[][] getPuzzle(){
         return state;
@@ -45,8 +42,6 @@ public class EightPuzzle {
                 count++;
             }
     }
-
-
 
     public boolean isGoal(EightPuzzle game){
         if(game.state == goalState)
