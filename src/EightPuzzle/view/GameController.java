@@ -1,20 +1,26 @@
 package EightPuzzle.view;
 
 import EightPuzzle.EightPuzzle;
+import EightPuzzle.Main;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.event.ActionEvent;
 
+import java.io.IOException;
 import java.util.Observable;
 
 public class GameController {
 
+    private static VBox vbox;
     @FXML
     private GridPane gPane;
 
@@ -80,9 +86,7 @@ public class GameController {
 
     }
 
-    public GridPane getgPane() {
-        return gPane;
-    }
+
 
 
 
@@ -92,8 +96,14 @@ public class GameController {
 
     }
     @FXML
-    void returnToMain(ActionEvent event) {
-
+    void returnToMain(ActionEvent event) throws IOException {
+        MainMenuController myController;
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("view/8GameMainMenu.fxml"));
+        myController = loader.getController();
+        vbox = loader.load();
+        Scene scene = new Scene((vbox));
+        Main.showMainView();
 
     }
 

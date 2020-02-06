@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 public class Main extends Application {
-    private Stage primaryStage;
+    private static Stage primaryStage;
     private static VBox vbox;
     private static GameController myController;
 
@@ -30,7 +30,7 @@ public class Main extends Application {
         showMainView();
 
     }
-    public void showMainView() throws IOException{
+    public static void showMainView() throws IOException{
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/8GameMainMenu.fxml"));
         vbox = loader.load();
@@ -41,11 +41,14 @@ public class Main extends Application {
 
     public static void showGame(EightPuzzle myGame)throws IOException{
         myGame = new EightPuzzle();
+        System.out.println(Arrays.deepToString(myGame.getPuzzle()));
+
         while(GFG.isSolvable(myGame.getState()) == false) {
-            System.out.println("Generating problem with a solution...");
+            System.out.println("Solution does not exist. Generating a new problem. Generating problem with a solution...");
             myGame.shuffle();
+            System.out.println(Arrays.deepToString(myGame.getPuzzle()));
         }
-        System.out.print(Arrays.deepToString(myGame.getPuzzle()));
+        
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/8Game.fxml"));
         VBox vboxGame = loader.load();
