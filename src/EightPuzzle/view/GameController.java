@@ -97,12 +97,6 @@ public class GameController {
     }
     @FXML
     void returnToMain(ActionEvent event) throws IOException {
-        MainMenuController myController;
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("view/8GameMainMenu.fxml"));
-        myController = loader.getController();
-        vbox = loader.load();
-        Scene scene = new Scene((vbox));
         Main.showMainView();
 
     }

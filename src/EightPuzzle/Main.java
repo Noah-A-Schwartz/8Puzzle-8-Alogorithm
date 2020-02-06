@@ -48,7 +48,7 @@ public class Main extends Application {
             myGame.shuffle();
             System.out.println(Arrays.deepToString(myGame.getPuzzle()));
         }
-        
+
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/8Game.fxml"));
         VBox vboxGame = loader.load();
