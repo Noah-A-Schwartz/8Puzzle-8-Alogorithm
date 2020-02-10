@@ -19,7 +19,7 @@ public class GFG {
             for (int j = i+1; j < array1D.length ; j++) {
                 // Value 0 is used for empty space
                 if (array1D[j] == 0) {
-                    continue;
+
 
                 }
                 else{

@@ -22,7 +22,7 @@ import java.util.Observable;
 
 public class GameController {
 
-    private static  EightPuzzle myGame;
+
 
     private static VBox vbox;
     @FXML
@@ -94,13 +94,13 @@ public class GameController {
 
     @FXML
     void Solve(ActionEvent event) {
-<<<<<<< HEAD
+
         myGame.solveGame();
-=======
+
         while((myGame.isGoal()) == false) {
             myGame.solveGame();
         }
->>>>>>> 3485310b5b3ba1d055c36ee80258978c60e72d12
+
     }
     @FXML
     void returnToMain(ActionEvent event) throws IOException {

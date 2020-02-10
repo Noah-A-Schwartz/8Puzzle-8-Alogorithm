@@ -43,13 +43,10 @@ public class EightPuzzle {
             }
     }
 
-<<<<<<< HEAD
-    public boolean isGoal() {
-        if (Arrays.deepEquals(state, goalState))
-=======
+
     public boolean isGoal(){
         if(state == goalState)
->>>>>>> 3485310b5b3ba1d055c36ee80258978c60e72d12
+
             return true;
         else return false;
     }
