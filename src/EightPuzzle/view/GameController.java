@@ -81,6 +81,8 @@ public class GameController {
     @FXML
     private Button mainButton;
 
+    private EightPuzzle myGame;
+
 
     public GameController() {
 
@@ -88,7 +90,7 @@ public class GameController {
 
     @FXML
     void Solve(ActionEvent event) {
-
+        myGame.solveGame();
     }
     @FXML
     void returnToMain(ActionEvent event) throws IOException {
@@ -97,6 +99,7 @@ public class GameController {
     }
 
     public void createBoard(EightPuzzle myGame) {
+        this.myGame = myGame;
         for (int row = 0; row < myGame.getPuzzle().length; row++) {
             for (int column = 0; column < myGame.getPuzzle()[row].length; column++) {
                 setRowAndColumn();

@@ -43,7 +43,7 @@ public class Main extends Application {
         myGame = new EightPuzzle();
         System.out.println(Arrays.deepToString(myGame.getPuzzle()));
 
-        while(GFG.isSolvable(myGame.getState()) == false) {
+       while(!GFG.isSolvable(myGame.getState())) {
             System.out.println("Solution does not exist. Generating a new problem. Generating problem with a solution...");
             myGame.shuffle();
             System.out.println(Arrays.deepToString(myGame.getPuzzle()));
