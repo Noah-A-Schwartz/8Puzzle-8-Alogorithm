@@ -13,24 +13,23 @@ public class GFG {
         }
 
         Integer inv_count = 0;
-        for (int i = 0; i < array1D.length-1; i++){
+        for (int i = 0; i < array1D.length -1; i++){
             if(array1D[i] == 0)
                 continue;
             for (int j = i+1; j < array1D.length ; j++) {
                 // Value 0 is used for empty space
                 if (array1D[j] == 0) {
 
-
                 }
-                else{
-                    if(array1D[i] > array1D[j]){
+                else if(array1D[i] > array1D[j]){
+
                         inv_count++;
-                    }
+
                 }
 
 
                 }
-            return inv_count;
+
 
             }
 
@@ -46,6 +45,6 @@ public class GFG {
         Integer invCount = getInvCount(puzzle);
 
         // return true if inversion count is even.
-        return (invCount % 2 == 0);
+        return (invCount % 2 != 0);
     }
 }
