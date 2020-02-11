@@ -3,7 +3,7 @@ package EightPuzzle;
 import EightPuzzle.view.GameController;
 import javafx.fxml.FXMLLoader;
 
-
+//Can take up to a minute
 import java.util.*;
 
 public class EightPuzzle {
@@ -82,11 +82,9 @@ public class EightPuzzle {
 
         //Loop until finds goal State
         while (!isGoal()) {
-            distance++;//I
             outer:
             for (int rows = 0; rows < state.length; rows++) {
                 for (int columns = 0; columns < state[rows].length; columns++) {
-                    // System.out.println(Arrays.deepToString(state));
                     if (state[rows][columns] == 0) {
                         open = createChild(n, rows, columns, open, closed);
                         n = open.get(0);
@@ -101,13 +99,6 @@ public class EightPuzzle {
     }
 
 
-    public ArrayList<Node> expandNode(ArrayList<Node> open, Node node) {
-        int temp = 0;
-
-
-        return open;
-    }
-
     private Integer[][] cloneArray(Integer[][] tempArray) {
         Integer[][] array = new Integer[3][3];
         for (int i = 0; i < tempArray.length; i++) {
@@ -118,6 +109,7 @@ public class EightPuzzle {
     }
 
     private List<Node> createChild(Node n, int rows, int columns, List<Node> a, List<Node> b) {
+
         List<Node> open = a;
         List<Node> closed = b;
         Node tempNode;
@@ -286,6 +278,7 @@ public class EightPuzzle {
                     n.addChild(tempNode);
                 }
             }
+            //If in Row 0 or 2, move numbers on the left and right
             if (rows == 0 || rows == 2) {
                 //Move number left right
                 array = cloneArray((Integer[][]) open.get(0).info);
@@ -320,7 +313,7 @@ public class EightPuzzle {
                 state[i] = array[i].clone();
             }
 
-            //Blank Space is in Center
+          //Blank Space is in center
         } else if (rows == 1 && columns == 1) {
 
             //Move number left right
@@ -394,11 +387,7 @@ public class EightPuzzle {
         int count = 0;
         while (count < n.children.size()) {
             for (int i = 0; i < open.size(); i++) {
-                if (heuristic((Integer[][]) n.children.get(count).info) + n.children.get(count).distance <= heuristic((Integer[][]) open.get(i).info) + open.get(i).distance && open.get(i) != n.children.get(count).parent) {
-                    open.add(i, n.children.get(count));
-                    count++;
-                    break;
-                } else if (i == open.size() - 1 && heuristic((Integer[][]) n.children.get(count).info) + n.children.get(count).distance <= heuristic((Integer[][]) open.get(i).info) + open.get(i).distance && open.get(i) != n.children.get(count).parent) {
+                if (heuristic((Integer[][]) n.children.get(count).info) + n.children.get(count).distance <= heuristic((Integer[][]) open.get(i).info) + open.get(i).distance) {
                     open.add(i, n.children.get(count));
                     count++;
                     break;
@@ -407,6 +396,7 @@ public class EightPuzzle {
                     count++;
                     break;
                 }
+
 
             }
         }
