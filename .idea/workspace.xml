@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8Puzzle/EightPuzzle/EightPuzzle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8Puzzle/EightPuzzle/EightPuzzle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8Puzzle/EightPuzzle/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8Puzzle/EightPuzzle/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8Puzzle/EightPuzzle/view/8Game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8Puzzle/EightPuzzle/view/8Game.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8Puzzle/EightPuzzle/view/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8Puzzle/EightPuzzle/view/GameController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8Puzzle/EightPuzzle/view/MainMenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8Puzzle/EightPuzzle/view/MainMenuController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EightPuzzle/EightPuzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EightPuzzle/EightPuzzle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EightPuzzle/view/8Game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/EightPuzzle/view/8Game.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EightPuzzle/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EightPuzzle/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EightPuzzle/view/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EightPuzzle/view/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EightPuzzle/view/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EightPuzzle/view/MainMenuController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,22 +226,22 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1621" height="158" key="GridCell.Tab.0.bottom" timestamp="1581007633586">
+    <state width="1621" height="158" key="GridCell.Tab.0.bottom" timestamp="1580949153949">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state width="1621" height="158" key="GridCell.Tab.0.bottom/0.0.1664.1069@0.0.1664.1069" timestamp="1581007633586" />
-    <state width="1621" height="158" key="GridCell.Tab.0.center" timestamp="1581007633585">
+    <state width="1621" height="158" key="GridCell.Tab.0.bottom/0.0.1664.1069@0.0.1664.1069" timestamp="1580949153949" />
+    <state width="1621" height="158" key="GridCell.Tab.0.center" timestamp="1580949153949">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state width="1621" height="158" key="GridCell.Tab.0.center/0.0.1664.1069@0.0.1664.1069" timestamp="1581007633585" />
-    <state width="1621" height="158" key="GridCell.Tab.0.left" timestamp="1581007633585">
+    <state width="1621" height="158" key="GridCell.Tab.0.center/0.0.1664.1069@0.0.1664.1069" timestamp="1580949153949" />
+    <state width="1621" height="158" key="GridCell.Tab.0.left" timestamp="1580949153949">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state width="1621" height="158" key="GridCell.Tab.0.left/0.0.1664.1069@0.0.1664.1069" timestamp="1581007633585" />
-    <state width="1621" height="158" key="GridCell.Tab.0.right" timestamp="1581007633585">
+    <state width="1621" height="158" key="GridCell.Tab.0.left/0.0.1664.1069@0.0.1664.1069" timestamp="1580949153949" />
+    <state width="1621" height="158" key="GridCell.Tab.0.right" timestamp="1580949153949">
       <screen x="0" y="0" width="1664" height="1069" />
     </state>
-    <state width="1621" height="158" key="GridCell.Tab.0.right/0.0.1664.1069@0.0.1664.1069" timestamp="1581007633585" />
+    <state width="1621" height="158" key="GridCell.Tab.0.right/0.0.1664.1069@0.0.1664.1069" timestamp="1580949153949" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
