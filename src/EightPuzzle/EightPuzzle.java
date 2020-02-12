@@ -13,6 +13,7 @@ public class EightPuzzle {
     private boolean goal;
     List<Integer> list;
     private GameController myController;
+    public List<Node> endPath = new ArrayList<Node>();
 
 
     public EightPuzzle() {
@@ -76,7 +77,7 @@ public class EightPuzzle {
         List<Node> closed = new ArrayList<Node>();//Closed list for nodes that have been expanded and explored
         int distance = 0; //Depth of tree
         Tree root = new Tree(4);//Creates a tree where any node can have max 4 children
-        Node n = new Node(state, distance);//Create first node of initial state
+        Node n = new Node(cloneArray(state), distance);//Create first node of initial state
         root.addRoot(n);//Add initial node as root of tree
         open.add(n);//Add to open list
 
@@ -94,12 +95,14 @@ public class EightPuzzle {
             }
             System.out.println(Arrays.deepToString(state));
         }
+        finalPath(n);
         System.out.println("Goal Found!");
         System.out.println(n.findRoot(0));
+
     }
 
 
-    private Integer[][] cloneArray(Integer[][] tempArray) {
+    public static Integer[][] cloneArray(Integer[][] tempArray) {
         Integer[][] array = new Integer[3][3];
         for (int i = 0; i < tempArray.length; i++) {
             array[i] = tempArray[i].clone();
@@ -402,6 +405,18 @@ public class EightPuzzle {
         }
         return open;
     }
+    //Creates a list with the Path from root to goal.
+    private void finalPath(Node n){
+
+
+        if(n.parent != null){
+            endPath.add(0,n);
+            finalPath(n.parent);
+        }
+        else  endPath.add(0, n);
+    }
+
+
 }
 
 

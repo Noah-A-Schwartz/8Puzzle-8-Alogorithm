@@ -39,7 +39,7 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-    public static void showGame(EightPuzzle myGame)throws IOException{
+    public static void showGame(EightPuzzle myGame) throws IOException, InterruptedException {
         myGame = new EightPuzzle();
         System.out.println(Arrays.deepToString(myGame.getPuzzle()));
 

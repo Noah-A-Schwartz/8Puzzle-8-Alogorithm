@@ -3,7 +3,7 @@ package EightPuzzle;
 //Used this to make n-ary tree structure https://stackoverflow.com/questions/30460565/k-ary-tree-implementation-in-java-how-to
 
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class Tree {
     public Node root;

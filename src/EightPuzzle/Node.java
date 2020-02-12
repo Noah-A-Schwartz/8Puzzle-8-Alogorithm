@@ -43,6 +43,7 @@ public class Node {
             depth++;
             depth = this.parent.findRoot(depth);
         }
+
         return depth;
     }
 

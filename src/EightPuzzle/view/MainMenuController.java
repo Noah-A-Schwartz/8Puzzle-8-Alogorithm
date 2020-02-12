@@ -28,7 +28,7 @@ public class MainMenuController {
     public MainMenuController(){ }
 
     @FXML
-    void startGame(ActionEvent event)throws IOException {
+    void startGame(ActionEvent event) throws IOException, InterruptedException {
         Main.showGame(myGame);
 
     }
