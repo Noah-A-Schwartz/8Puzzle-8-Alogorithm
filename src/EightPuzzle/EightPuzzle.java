@@ -1,9 +1,8 @@
 package EightPuzzle;
 
-import EightPuzzle.view.GameController;
-import javafx.fxml.FXMLLoader;
 
-//Can take up to a minute
+
+
 import java.util.*;
 
 public class EightPuzzle {
@@ -99,7 +98,7 @@ public class EightPuzzle {
         finalPath(n);
         System.out.println("Goal Found!");
         //Prints out distance from root of node where goal was found
-        System.out.println(n.distance);//
+        System.out.println("Depth of goal state: " +n.distance);
 
     }
 
@@ -112,7 +111,8 @@ public class EightPuzzle {
         }
         return array;
     }
-
+    //Creates children of the given node passed to the method based on where 0 is located in that state, adds those children to open list depending on their heuristic
+    //A is the current open list, b is the current closed list, row and column is the current location of 0
     private List<Node> createChild(Node n, int rows, int columns, List<Node> a, List<Node> b) {
 
         List<Node> open = a;

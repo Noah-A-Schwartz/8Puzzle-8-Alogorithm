@@ -34,7 +34,7 @@ public class GFG {
             }
 
 
-        System.out.println(inv_count);
+        System.out.println("Inversions: " + inv_count);
         return inv_count;
     }
     // This function returns true
