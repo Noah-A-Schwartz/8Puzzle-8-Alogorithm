@@ -12,6 +12,7 @@ import javafx.scene.layout.VBox;
 import java.io.IOException;
 import java.util.Arrays;
 
+//Controller class for Main menu page
 public class MainMenuController {
 
 
@@ -21,22 +22,19 @@ public class MainMenuController {
 
     private EightPuzzle myGame;
 
-    private VBox vbox;
 
-    private static GameController myController;
+
+
 
     public MainMenuController(){ }
 
+    //Loads new game from main menu
     @FXML
-    void startGame(ActionEvent event)throws IOException {
-        Main.showGame(myGame);
+    void startGame(ActionEvent event) throws IOException, InterruptedException {
+        Main.showGame();
 
     }
 
-    @FXML
-    public Button getButtonStart() {
-        return buttonStart;
-    }
 }
 
 

@@ -24,12 +24,13 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-
+        //Start app, show main view
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("Eight Puzzle");
         showMainView();
 
     }
+    //Loads homepage from fxml
     public static void showMainView() throws IOException{
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/8GameMainMenu.fxml"));
@@ -39,20 +40,27 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-    public static void showGame(EightPuzzle myGame)throws IOException{
-        myGame = new EightPuzzle();
+    //Loads game page with numbers
+    public static void showGame() throws IOException, InterruptedException {
+        //Creates new game
+
+        EightPuzzle myGame = new EightPuzzle();
+        //Prints initial state
         System.out.println(Arrays.deepToString(myGame.getPuzzle()));
 
-        while(GFG.isSolvable(myGame.getState()) == false) {
+        //If initial state in not solvable, reshuffles game array
+       while(!GFG.isSolvable(myGame.getState())) {
             System.out.println("Solution does not exist. Generating a new problem. Generating problem with a solution...");
             myGame.shuffle();
             System.out.println(Arrays.deepToString(myGame.getPuzzle()));
         }
 
+       //Loads new game game from fxml
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/8Game.fxml"));
         VBox vboxGame = loader.load();
         myController = loader.getController();
+        //create boards adds numbers to their correct pane
         myController.createBoard(myGame);
         vbox.getChildren().setAll(vboxGame);
     }

@@ -38,8 +38,8 @@
                               <Font name="Microsoft Tai Le" size="48.0" />
                            </font>
                         </Text>
-                        <Line fx:id="line0To1" endX="120.93746948242188" endY="0.0078125" layoutX="200.0" layoutY="62.0" startX="-93.0625228881836" startY="0.0078125" />
-                        <Line fx:id="line0To3" endX="-8.062522888183594" endY="83.0" layoutX="115.0" layoutY="103.0" startX="-8.062522888183594" startY="-40.9921875" />
+                        <Line fx:id="line0To1" endX="120.93746948242188" endY="0.0078125" layoutX="200.0" layoutY="62.0" startX="-93.0625228881836" startY="0.0078125" visible="false" />
+                        <Line fx:id="line0To3" endX="-8.062522888183594" endY="83.0" layoutX="115.0" layoutY="103.0" startX="-8.062522888183594" startY="-40.9921875" visible="false" />
                      </children></Pane>
                   <Pane fx:id="pane1" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
                      <children>
@@ -48,8 +48,8 @@
                               <Font name="Microsoft Tai Le" size="48.0" />
                            </font>
                         </Text>
-                        <Line fx:id="line1To2" endX="107.27081298828125" endY="0.0078125" layoutX="213.0" layoutY="62.0" startX="-106.06253051757812" startY="0.0078125" />
-                        <Line fx:id="line1To4" endX="-8.062530517578125" endY="83.0" layoutX="116.0" layoutY="104.0" startX="-8.062522888183594" startY="-40.9921875" />
+                        <Line fx:id="line1To2" endX="107.27081298828125" endY="0.0078125" layoutX="213.0" layoutY="62.0" startX="-106.06253051757812" startY="0.0078125" visible="false" />
+                        <Line fx:id="line1To4" endX="-8.062530517578125" endY="83.0" layoutX="116.0" layoutY="104.0" startX="-8.062522888183594" startY="-40.9921875" visible="false" />
                      </children></Pane>
                   <Pane fx:id="pane2" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
                      <children>
@@ -58,7 +58,7 @@
                               <Font name="Microsoft Tai Le" size="48.0" />
                            </font>
                         </Text>
-                        <Line fx:id="line2To5" endX="-8.062522888183594" endY="83.0" layoutX="115.0" layoutY="103.0" startX="-8.062522888183594" startY="-40.9921875" />
+                        <Line fx:id="line2To5" endX="-8.062522888183594" endY="83.0" layoutX="115.0" layoutY="103.0" startX="-8.062522888183594" startY="-40.9921875" visible="false" />
                      </children>
                   </Pane>
                   <Pane fx:id="pane3" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
@@ -68,8 +68,8 @@
                               <Font name="Microsoft Tai Le" size="48.0" />
                            </font>
                         </Text>
-                        <Line fx:id="line3To4" endX="179.93746948242188" endY="1.0078315734863281" layoutX="141.0" layoutY="61.0" startX="-34.062522888183594" startY="1.0078315734863281" />
-                        <Line fx:id="line3To6" endX="-8.062522888183594" endY="83.0" layoutX="115.0" layoutY="102.0" startX="-8.062522888183594" startY="-40.9921875" />
+                        <Line fx:id="line3To4" endX="179.93746948242188" endY="1.0078315734863281" layoutX="141.0" layoutY="61.0" startX="-34.062522888183594" startY="1.0078315734863281" visible="false" />
+                        <Line fx:id="line3To6" endX="-8.062522888183594" endY="83.0" layoutX="115.0" layoutY="102.0" startX="-8.062522888183594" startY="-40.9921875" visible="false" />
                      </children></Pane>
                   <Pane fx:id="pane4" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
@@ -78,8 +78,8 @@
                               <Font name="Microsoft Tai Le" size="48.0" />
                            </font>
                         </Text>
-                        <Line fx:id="line4To5" endX="159.27081298828125" endY="0.007831573486328125" layoutX="161.0" layoutY="62.0" startX="-54.062530517578125" startY="0.007831573486328125" />
-                        <Line fx:id="line4To7" endX="-8.062522888183594" endY="83.0" layoutX="116.0" layoutY="103.0" startX="-8.062522888183594" startY="-40.9921875" />
+                        <Line fx:id="line4To5" endX="159.27081298828125" endY="0.007831573486328125" layoutX="161.0" layoutY="62.0" startX="-54.062530517578125" startY="0.007831573486328125" visible="false" />
+                        <Line fx:id="line4To7" endX="-8.062522888183594" endY="83.0" layoutX="116.0" layoutY="103.0" startX="-8.062522888183594" startY="-40.9921875" visible="false" />
                      </children></Pane>
                   <Pane fx:id="pane5" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <children>
@@ -88,7 +88,7 @@
                               <Font name="Microsoft Tai Le" size="48.0" />
                            </font>
                         </Text>
-                        <Line fx:id="line8To8" endX="-8.062522888183594" endY="83.0" layoutX="115.0" layoutY="104.0" startX="-8.062522888183594" startY="-40.9921875" />
+                        <Line fx:id="line8To8" endX="-8.062522888183594" endY="83.0" layoutX="115.0" layoutY="104.0" startX="-8.062522888183594" startY="-40.9921875" visible="false" />
                      </children>
                   </Pane>
                   <Pane fx:id="pane6" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
@@ -98,7 +98,7 @@
                               <Font name="Microsoft Tai Le" size="48.0" />
                            </font>
                         </Text>
-                        <Line fx:id="line6To7" endX="251.66665649414062" endY="1.0078125" layoutX="71.0" layoutY="60.0" startX="35.666664123535156" startY="1.0078125" />
+                        <Line fx:id="line6To7" endX="251.66665649414062" endY="1.0078125" layoutX="71.0" layoutY="60.0" startX="35.666664123535156" startY="1.0078125" visible="false" />
                      </children></Pane>
                   <Pane fx:id="pane7" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
@@ -109,7 +109,7 @@
                         </Text>
                         <Button fx:id="startSolve" layoutX="130.0" layoutY="113.0" mnemonicParsing="false" onAction="#Solve" text="Solve" />
                         <Button fx:id="mainButton" layoutX="42.0" layoutY="113.0" mnemonicParsing="false" onAction="#returnToMain" text="Main Menu" />
-                        <Line fx:id="line7To8" endX="201.27081298828125" endY="1.0078125" layoutX="119.0" layoutY="61.0" startX="-9.666656494140625" startY="0.0078125" />
+                        <Line fx:id="line7To8" endX="201.27081298828125" endY="1.0078125" layoutX="119.0" layoutY="61.0" startX="-9.666656494140625" startY="0.0078125" visible="false" />
                      </children></Pane>
                   <Pane fx:id="pane8" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <children>
