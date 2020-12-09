@@ -21,12 +21,11 @@ import javafx.scene.shape.Path;
 import java.util.Arrays;
 import java.util.List;
 import java.io.IOException;
-
-
+import java.util.concurrent.TimeUnit;
 
 
 //Controller class for Game Page
-public class GameController {
+public class GameController implements Runnable{
 
 
 
@@ -144,16 +143,24 @@ public class GameController {
 
     private EightPuzzle myGame;
 
+    Thread thread;
 
-    public GameController() {
 
+    public GameController()  {
+
+    }
+    public GameController(EightPuzzle myGame, GridPane gPane)  {
+        this.myGame = myGame;
+        this.gPane = gPane;
     }
     //Button click for solve button, solves game, displays solution
     @FXML
     void Solve(ActionEvent event) throws InterruptedException {
 
         myGame.solveGame();
-        showSolutionPath(myGame);
+        thread = new Thread(new GameController(myGame, gPane));
+        thread.start();
+
 
 
 
@@ -168,6 +175,14 @@ public class GameController {
     //Not sure if it will be possible to implement threading at this point
     //I used print statements in console to show the switching of the panes as the path is found for now.
     @FXML
+    public void run(){
+        try {
+
+            showSolutionPath(myGame);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
     void showSolutionPath(EightPuzzle myGame) throws InterruptedException {
         //Array index of 0 of current node
         int row;
@@ -199,10 +214,12 @@ public class GameController {
             currentIndexes = findfindZero(array);
             row = currentIndexes[0]; column = currentIndexes[1];
             //Switches the blank space with to where it is is in the next node, as well as the number it was swapped with
+            thread.sleep(800);
+            if(i != list.size() - 1)
+                System.out.println("Swap " +  parentArray[row][column] + " With " +array[row][column]);
             setPane(lastRow, lastColumn, array[lastRow][lastColumn]);
             setPane(row, column, array[row][column]);
-            if(i != list.size() - 1)
-            System.out.println("Swap " +  parentArray[row][column] + " With " +array[row][column]);
+
 
 
 
@@ -227,7 +244,7 @@ public class GameController {
     }
 
 
-    public void createBoard(EightPuzzle myGame)  {
+    public void createBoard(EightPuzzle myGame) throws InterruptedException {
         this.myGame = myGame;
         for (int row = 0; row < myGame.getPuzzle().length; row++) {
             for (int column = 0; column < myGame.getPuzzle()[row].length; column++) {
@@ -238,7 +255,7 @@ public class GameController {
 
     }
     //Sets number in given pane based on row column and the num passed to it(each grid has a pane to store the number in)
-    public void setPane(int row, int column, int num){
+    public void setPane(int row, int column, int num) throws InterruptedException {
         //Loops through the grids until it finds grid that matches current row and column
         ObservableList<javafx.scene.Node> gridChildrens = gPane.getChildren();
         for (javafx.scene.Node node : gridChildrens) {
@@ -248,6 +265,7 @@ public class GameController {
                 ObservableList<javafx.scene.Node> paneChildren = p.getChildren();
                 for (javafx.scene.Node node2 : paneChildren) {
                     Text t = (Text) node2;
+                    t.setFill(Color.BLACK);
                     //IF pane is set to 0, also make invisible
                     if(num == 0){
                         t.setText(Integer.toString(num));
@@ -256,18 +274,16 @@ public class GameController {
                     }
                     //if setting 0 to a number, make visible
                     else {
+
                         t.setText(Integer.toString(num));
                         t.setVisible(true);
+                        thread.sleep(1);
                         return;
                     }
+
                 }
-
-
             }
-
-
         }
-
     }
     //Used scene builder to build GUI and used a gridpane, but scenebuilder does not assign indexes to the grids, so had to do this manually
     public void setRowAndColumn() {

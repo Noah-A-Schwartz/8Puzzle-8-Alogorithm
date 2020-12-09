@@ -8,13 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/8Puzzle_jar/8Puzzle.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/8Puzzle_jar/8Puzzle.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/8Puzzle/EightPuzzle/EightPuzzle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8Puzzle/EightPuzzle/EightPuzzle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8Puzzle/EightPuzzle/GFG.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8Puzzle/EightPuzzle/GFG.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/8Puzzle/EightPuzzle/view/8Game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/8Puzzle/EightPuzzle/view/8Game.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EightPuzzle/EightPuzzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EightPuzzle/EightPuzzle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EightPuzzle/GFG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EightPuzzle/GFG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EightPuzzle/view/8Game.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/EightPuzzle/view/8Game.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EightPuzzle/view/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EightPuzzle/view/GameController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +90,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -216,6 +210,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -237,39 +232,21 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="562" y="319" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1582149237122">
-      <screen x="0" y="0" width="1664" height="1069" />
-    </state>
-    <state x="562" y="319" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1664.1069@0.0.1664.1069" timestamp="1582149237122" />
-    <state width="1621" height="572" key="GridCell.Tab.0.bottom" timestamp="1582151052568">
-      <screen x="0" y="0" width="1664" height="1069" />
-    </state>
-    <state width="1621" height="572" key="GridCell.Tab.0.bottom/0.0.1664.1069@0.0.1664.1069" timestamp="1582151052568" />
-    <state width="1621" height="572" key="GridCell.Tab.0.center" timestamp="1582151052567">
-      <screen x="0" y="0" width="1664" height="1069" />
-    </state>
-    <state width="1621" height="572" key="GridCell.Tab.0.center/0.0.1664.1069@0.0.1664.1069" timestamp="1582151052567" />
-    <state width="1621" height="572" key="GridCell.Tab.0.left" timestamp="1582151052567">
-      <screen x="0" y="0" width="1664" height="1069" />
-    </state>
-    <state width="1621" height="572" key="GridCell.Tab.0.left/0.0.1664.1069@0.0.1664.1069" timestamp="1582151052567" />
-    <state width="1621" height="572" key="GridCell.Tab.0.right" timestamp="1582151052568">
-      <screen x="0" y="0" width="1664" height="1069" />
-    </state>
-    <state width="1621" height="572" key="GridCell.Tab.0.right/0.0.1664.1069@0.0.1664.1069" timestamp="1582151052567" />
-    <state x="313" y="111" key="SettingsEditor" timestamp="1582149258780">
-      <screen x="0" y="0" width="1664" height="1069" />
-    </state>
-    <state x="313" y="111" key="SettingsEditor/0.0.1664.1069@0.0.1664.1069" timestamp="1582149258780" />
-    <state x="529" y="361" key="com.intellij.ide.util.TipDialog" timestamp="1582144478481">
-      <screen x="0" y="0" width="1664" height="1069" />
-    </state>
-    <state x="529" y="361" key="com.intellij.ide.util.TipDialog/0.0.1664.1069@0.0.1664.1069" timestamp="1582144478481" />
-    <state x="632" y="226" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582145985648">
-      <screen x="0" y="0" width="1664" height="1069" />
-    </state>
-    <state x="632" y="226" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1664.1069@0.0.1664.1069" timestamp="1582145985648" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/EightPuzzle/view/GameController.java</url>
+          <line>180</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/EightPuzzle/view/GameController.java</url>
+          <line>160</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
